@@ -8,28 +8,154 @@
    .container{
        width: 960px;
    }
+.form-send label {
+    width: 360px;
+}
+
   
 }
 @media only screen and (max-width: 992px) {
     .container{
         width: 745px;
     }
-   
+    .header-menu-content{
+        padding-top: 7px;
+    }
+    .banner-text p{
+        font-size: 30px;
+    }
+    .banner-text button{
+        padding: 20px 0;
+    }
+    .card-service,
+    .team-card,
+    .skill-card{
+        width: 50%;
+        padding-top: 40px;
+    }
+    .card-service:nth-child(3),
+    .team-card:nth-child(3),
+    .skill-card:nth-child(3){
+        clear: both;
+    }
+    .card-services-wrapper{
+        padding: 40px 0;
+    }
+    
+    .portfolio-card{
+        width: 44%;
+    }
+    .tabs-content{
+        min-height: 600px;
+    }
+    .feedback-card .feedback-text-part{
+        width: 70%;
+        padding-left: 35px;
+        p{
+            font-size: 16px;
+        }
+        h3{
+            font-size: 20px;
+        }
+        h4{
+            font-size: 16px;
+        }
+    }
+    .form-send label{
+        width: 275px;
+    }
+    .soc-footer-icon-wrapper a{
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .container{
         width: 100%;
     }
-   
+    .header-menu-content{
+        transform: rotateX(-90deg);
+        transform-origin: 0 100% 0;
+        li{
+            display: block;
+            text-align: right;
+        }
+    }
+    .burger-btn{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        margin-left: auto;
+        cursor: pointer;
+        span{
+            width: 100%;
+            background: #fff;
+            display: block;
+            height: 2px;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            &:before,
+            &:after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #fff;
+            }
+            &:before{
+                top: -5px;
+                left: 0;
+                transform: translate(0%, -50%);
+            }
+            &:after{
+                bottom: -5px;
+                left: 0;
+                transform: translate(0%, 50%);
+            }
+        }
+    }
+    header .header-menu {
+        width: 200px;
+    }
+    .banner-text {
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+    .banner-text p {
+        font-size: 25px;
+    }
+    .feedback-card{
+        width: 100%;
+        padding: 35px 0;
+    }
+    .form-send label {
+        width: 100%;
+    }
 }
-@media only screen and (max-width: 680px) {
- 
-
-}
-
 @media only screen and (max-width: 576px) {
-   
+    .card-service, .skill-card, .team-card {
+        width: 100%;
+        padding-top: 40px;
+    }
+    .banner-text p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .portfolio-card {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .soc-footer-icon-wrapper{
+        width: 100%;
+        a{
+            width: 25%;
+        }
+    }
+    .form-send{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 450px) {
