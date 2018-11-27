@@ -1,5 +1,5 @@
-@import './reset.scss';
-@import './mixins.scss';
+@import "./reset.scss";
+@import "./mixins.scss";
 img {
   width: 100%;
   height: auto;
@@ -19,54 +19,52 @@ a {
 
 html {
   font-size: 10px;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 body {
   font-size: 18px;
-
 }
 
 * {
   box-sizing: border-box;
 }
 
-
 /* ===========================================================
 ================----------HEADER--------------================
 ============================================================== */
-header{
+header {
   background: #87509c;
 }
-.header-menu-content{
-  li{
+.header-menu-content {
+  li {
     padding: 8px 14px;
     border-radius: 3px;
     display: inline-block;
-    transition: .3s linear;
-    a{
+    transition: 0.3s linear;
+    a {
       text-transform: uppercase;
       font-size: 16px;
       line-height: 18px;
     }
-    &:hover{
+    &:hover {
       background: #643a79;
     }
   }
 }
-.banner-text{
+.banner-text {
   padding-top: 239px;
   padding-bottom: 269px;
   margin: 0 auto;
   text-align: center;
-  p{
+  p {
     font-size: 42px;
     line-height: 48px;
     color: #fff;
     font-weight: 700;
     padding-bottom: 55px;
   }
-  button{
+  button {
     width: 290px;
     background: #eb7d4b;
     color: #fff;
@@ -74,7 +72,8 @@ header{
     border-radius: 4px;
     font-weight: 600;
     border: 1px solid #eb7d4b;
-    &:focus{
+    cursor: pointer;
+    &:focus {
       outline: none;
       border: 1px solid #c86a40;
     }
@@ -84,22 +83,22 @@ header{
 /* ===========================================================
 ================----------BANNER--------------================
 ============================================================== */
-.services{
+.services {
   background: #17c2a4;
   padding: 60px 0;
 }
-.central-heading{
+.central-heading {
   margin: 0 auto;
   text-align: center;
   color: #fff;
-  h2{
+  h2 {
     font-size: 40px;
     font-weight: 700;
     padding: 45px 0;
     position: relative;
     display: block;
-    &:before{
-      content: '';
+    &:before {
+      content: "";
       position: absolute;
       bottom: 20px;
       left: 50%;
@@ -109,27 +108,27 @@ header{
       background: #14a58c;
     }
   }
-  p{
+  p {
     font-size: 18px;
     line-height: 26px;
   }
 }
-.card-services-wrapper{
+.card-services-wrapper {
   min-height: 400px;
   width: 100%;
 }
-.card-service{
+.card-service {
   width: 25%;
   color: #fff;
   text-align: center;
   float: left;
-  h3{
+  h3 {
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
     padding: 55px 0 25px 0;
   }
-  p{
+  p {
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
@@ -138,59 +137,59 @@ header{
 /* ===========================================================
 ================----------team--------------================
 ============================================================== */
-.team{
+.team {
   background: #e7f1f8;
-  .central-heading{
+  .central-heading {
     color: #3c4761;
-    h2:before{
-      background: rgba(200, 217, 229, .8);
+    h2:before {
+      background: rgba(200, 217, 229, 0.8);
     }
   }
 }
-.team-cards-wrapper{
+.team-cards-wrapper {
   padding: 50px 0;
   min-height: 600px;
   width: 100%;
 }
-.team-card{
+.team-card {
   width: 250px;
   text-align: center;
   float: left;
   padding: 20px;
-  h3{
+  h3 {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 700;
     padding-top: 45px;
   }
-  h4{
+  h4 {
     font-size: 16px;
     color: #30bae7;
     font-weight: 400;
     padding: 13px 0;
   }
-  p{
+  p {
     font-weight: 300;
     color: #535e75;
     padding: 13px 0;
   }
-  .avatar-team{
+  .avatar-team {
     width: 196px;
     height: 196px;
     margin: 0 auto;
     border-radius: 50%;
     background: #ccc;
   }
-  .soc-icons{
-    a{
+  .soc-icons {
+    a {
       background: #bdd1df;
       border-radius: 50%;
       padding: 10px;
-      transition: .3s linear;
-      &.fa-facebook{
+      transition: 0.3s linear;
+      &.fa-facebook {
         padding: 10px 13px;
       }
-      &:hover{
+      &:hover {
         background: #6eb9ec;
       }
     }
@@ -200,119 +199,314 @@ header{
 /* ===========================================================
 ================----------skills----------================
 ============================================================== */
-.skills{
-  .central-heading{
+.skills {
+  .central-heading {
     color: #3c4761;
-    h2:before{
-      background: rgba(200, 217, 229, .8);
+    h2:before {
+      background: rgba(200, 217, 229, 0.8);
     }
   }
 }
-.skill-cards-wrapper{
+.skill-cards-wrapper {
   min-height: 290px;
   padding: 50px 0;
   width: 100%;
 }
-.skill-card{
-  $diameter: 200px;
-$accent: red;
-$gray: gray;
-$progress: 270; // Угол
-$border: 10px;
-float: left;
-.progress {
-  position: relative;
-  width: $diameter;
-  height: $diameter;
-  border-radius: 50%;
-  background-color: $accent;
-  &::before {
-    position: absolute;
-    content: '';
-    @if $progress > 180 {
-      background-color: $accent;
-    }
-    @if $progress <= 180 {
-      background-color: $gray;
-    }
+.skill-card {
+  $diameter: 160px;
+  $accent: #30bae7;
+  $gray: #dfe8ed;
+  $progress: 320; // Угол
+  $border: 13px;
+  float: left;
+  .progress {
+    position: relative;
     width: $diameter;
     height: $diameter;
     border-radius: 50%;
-    clip: rect(0, #{$diameter/2}, $diameter, 0);
-    transform-origin: 50% 50%;
-    @if $progress <= 180 {
-      transform: rotate(#{180 + $progress}deg);
-    }
-    @if $progress > 180 {
-      transform: rotate(#{180 + $progress - 180}deg);
-    }
-    z-index: 1;
-  }
-  &::after {
-    position: absolute;
-    content: '';
-    background-color: $gray;
-    width: $diameter;
-    height: $diameter;
-    border-radius: 50%;
-    clip: rect(0, #{$diameter/2}, $diameter, 0);
-    transform-origin: 50% 50%;
-    transform: rotate(0deg);
-  }
-  .center {
-    position: absolute;
-    top: $border;
-    left: $border;
-    width: #{$diameter - 2 * $border};
-    height: #{$diameter - 2 * $border};
-    background-color: white;
-    border-radius: 50%;
-    z-index: 2;
-    h2{
+    background-color: $accent;
+    &::before {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      font-size: 40px;
+      content: "";
+      @if $progress > 180 {
+        background-color: $accent;
+      }
+      @if $progress <= 180 {
+        background-color: $gray;
+      }
+      width: $diameter;
+      height: $diameter;
+      border-radius: 50%;
+      clip: rect(0, #{$diameter/2}, $diameter, 0);
+      transform-origin: 50% 50%;
+      @if $progress <= 180 {
+        transform: rotate(#{180 + $progress}deg);
+      }
+      @if $progress > 180 {
+        transform: rotate(#{180 + $progress - 180}deg);
+      }
+      z-index: 1;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $gray;
+      width: $diameter;
+      height: $diameter;
+      border-radius: 50%;
+      clip: rect(0, #{$diameter/2}, $diameter, 0);
+      transform-origin: 50% 50%;
+      transform: rotate(0deg);
+    }
+    .center {
+      position: absolute;
+      top: $border;
+      left: $border;
+      width: #{$diameter - 2 * $border};
+      height: #{$diameter - 2 * $border};
+      background-color: white;
+      border-radius: 50%;
+      z-index: 2;
+      h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+      }
     }
   }
 }
+.skill-card:nth-child(2) {
+  $diameter: 160px;
+  $accent: #d74680;
+  $gray: #dfe8ed;
+  $progress: 270; // Угол
+  $border: 13px;
+  float: left;
+  .progress {
+    position: relative;
+    width: $diameter;
+    height: $diameter;
+    border-radius: 50%;
+    background-color: $accent;
+    &::before {
+      position: absolute;
+      content: "";
+      @if $progress > 180 {
+        background-color: $accent;
+      }
+      @if $progress <= 180 {
+        background-color: $gray;
+      }
+      width: $diameter;
+      height: $diameter;
+      border-radius: 50%;
+      clip: rect(0, #{$diameter/2}, $diameter, 0);
+      transform-origin: 50% 50%;
+      @if $progress <= 180 {
+        transform: rotate(#{180 + $progress}deg);
+      }
+      @if $progress > 180 {
+        transform: rotate(#{180 + $progress - 180}deg);
+      }
+      z-index: 1;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $gray;
+      width: $diameter;
+      height: $diameter;
+      border-radius: 50%;
+      clip: rect(0, #{$diameter/2}, $diameter, 0);
+      transform-origin: 50% 50%;
+      transform: rotate(0deg);
+    }
+    .center {
+      position: absolute;
+      top: $border;
+      left: $border;
+      width: #{$diameter - 2 * $border};
+      height: #{$diameter - 2 * $border};
+      background-color: white;
+      border-radius: 50%;
+      z-index: 2;
+      h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+      }
+    }
+  }
+}
+.skill-card:nth-child(3) {
+  $diameter: 160px;
+  $accent: #15c7a8;
+  $gray: #dfe8ed;
+  $progress: 250; // Угол
+  $border: 13px;
+  float: left;
+  .progress {
+    position: relative;
+    width: $diameter;
+    height: $diameter;
+    border-radius: 50%;
+    background-color: $accent;
+    &::before {
+      position: absolute;
+      content: "";
+      @if $progress > 180 {
+        background-color: $accent;
+      }
+      @if $progress <= 180 {
+        background-color: $gray;
+      }
+      width: $diameter;
+      height: $diameter;
+      border-radius: 50%;
+      clip: rect(0, #{$diameter/2}, $diameter, 0);
+      transform-origin: 50% 50%;
+      @if $progress <= 180 {
+        transform: rotate(#{180 + $progress}deg);
+      }
+      @if $progress > 180 {
+        transform: rotate(#{180 + $progress - 180}deg);
+      }
+      z-index: 1;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $gray;
+      width: $diameter;
+      height: $diameter;
+      border-radius: 50%;
+      clip: rect(0, #{$diameter/2}, $diameter, 0);
+      transform-origin: 50% 50%;
+      transform: rotate(0deg);
+    }
+    .center {
+      position: absolute;
+      top: $border;
+      left: $border;
+      width: #{$diameter - 2 * $border};
+      height: #{$diameter - 2 * $border};
+      background-color: white;
+      border-radius: 50%;
+      z-index: 2;
+      h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+      }
+    }
+  }
+}
+.skill-card:nth-child(4) {
+  $diameter: 160px;
+  $accent: #eb7d4b;
+  $gray: #dfe8ed;
+  $progress: 300; // Угол
+  $border: 13px;
+  float: left;
+  .progress {
+    position: relative;
+    width: $diameter;
+    height: $diameter;
+    border-radius: 50%;
+    background-color: $accent;
+    &::before {
+      position: absolute;
+      content: "";
+      @if $progress > 180 {
+        background-color: $accent;
+      }
+      @if $progress <= 180 {
+        background-color: $gray;
+      }
+      width: $diameter;
+      height: $diameter;
+      border-radius: 50%;
+      clip: rect(0, #{$diameter/2}, $diameter, 0);
+      transform-origin: 50% 50%;
+      @if $progress <= 180 {
+        transform: rotate(#{180 + $progress}deg);
+      }
+      @if $progress > 180 {
+        transform: rotate(#{180 + $progress - 180}deg);
+      }
+      z-index: 1;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $gray;
+      width: $diameter;
+      height: $diameter;
+      border-radius: 50%;
+      clip: rect(0, #{$diameter/2}, $diameter, 0);
+      transform-origin: 50% 50%;
+      transform: rotate(0deg);
+    }
+    .center {
+      position: absolute;
+      top: $border;
+      left: $border;
+      width: #{$diameter - 2 * $border};
+      height: #{$diameter - 2 * $border};
+      background-color: white;
+      border-radius: 50%;
+      z-index: 2;
+      h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+      }
+    }
+  }
 }
 /* ===========================================================
 ================----------portfolio--------------================
 ============================================================== */
-.portfolio{
+.portfolio {
   background: #ffdd99;
   padding: 100px 0;
   text-align: center;
-  .central-heading{
+  .central-heading {
     color: #3c4761;
-    h2:before{
+    h2:before {
       background: #e5c37f;
     }
   }
 }
 
-.tabs-nav{
+.tabs-nav {
   width: 390px;
   margin: 0 auto;
   padding: 45px 10px;
-  li{
+  li {
     display: inline-block;
     padding: 10px 25px;
     border-radius: 4px;
     background: #ebc985;
     cursor: pointer;
-    transition: .3s linear;
-    &.active{
+    transition: 0.3s linear;
+    &.active {
       background: #fff;
     }
-    &:hover{
+    &:hover {
       background: #fff;
     }
   }
 }
-.tabs-content{
+.tabs-content {
   position: relative;
   width: 100%;
 }
@@ -322,15 +516,15 @@ float: left;
 }
 .portfolio-cards-wrapper.active {
   transform: scale(1);
-  transition: all .5s linear;
+  transition: all 0.5s linear;
   position: static;
 }
-.portfolio-card{
+.portfolio-card {
   width: 45%;
   text-align: center;
   float: left;
   margin: 0 20px;
-  h3{
+  h3 {
     font-weight: 400;
     font-size: 18px;
     text-transform: uppercase;
@@ -338,7 +532,7 @@ float: left;
   }
 }
 
-.btn-more-portfolio{
+.btn-more-portfolio {
   width: 290px;
   background: #17c2a4;
   text-transform: uppercase;
@@ -348,7 +542,7 @@ float: left;
   border: 1px solid #17c2a4;
   font-weight: 600;
   cursor: pointer;
-  &:focus{
+  &:focus {
     outline: none;
     border: 1px solid #17c2a4;
   }
@@ -356,103 +550,102 @@ float: left;
 /* ===========================================================
 ================----------about--------------================
 ============================================================== */
-.about{
+.about {
   background: #d74680;
-  .central-heading{
-    h2:before{
+  .central-heading {
+    h2:before {
       background: #b73c6d;
     }
   }
 }
 
-.feedback-wrapper{
+.feedback-wrapper {
   width: 100%;
   min-height: 580px;
 }
-.feedback-card{
+.feedback-card {
   width: 45%;
   color: #e7f1f8;
   float: left;
   text-align: left;
-  p{
+  p {
     font-size: 21px;
     line-height: 34px;
     font-style: italic;
   }
-  h3{
-   font-size: 24px;
-   font-weight: 700;
-   text-transform: uppercase;
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
   }
-  h4{
+  h4 {
     font-size: 18px;
     color: #fac996;
   }
 }
-.feedback-avatar{
+.feedback-avatar {
   width: 95px;
   height: 95px;
   border-radius: 50%;
   background: #ccc;
 }
 
-
 /* ===========================================================
 ================----------form--------------================
 ============================================================== */
-.form-wrapper{
+.form-wrapper {
   background: #3c5499;
   padding: 100px 0;
-  .central-heading{
-    h2:before{
+  .central-heading {
+    h2:before {
       background: #273a71;
     }
   }
 }
-.form-send{
+.form-send {
   width: 80%;
   min-height: 495px;
   margin: 0 auto;
   text-align: center;
-  label{
+  label {
     display: inline-block;
     position: relative;
     width: 400px;
     height: 80px;
-    p{
+    p {
       font-size: 18px;
-      color:#e7f1f8;
+      color: #e7f1f8;
       position: absolute;
       top: 50%;
       left: 25px;
-      transform: translate(0,-50%);
-      span{
+      transform: translate(0, -50%);
+      span {
         color: #ff0000;
       }
     }
   }
-  .comment-wrapper{
+  .comment-wrapper {
     width: 100%;
     height: 200px;
-    p{
+    p {
       top: 22px;
     }
   }
-  input{
+  input {
     width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background: #273a71;
     padding: 15px 20px;
     border: none;
     border-radius: 4px;
-    &:focus{
+    &:focus {
       outline: none;
     }
   }
-  textarea{
+  textarea {
     width: 100%;
     height: 200px;
     background: #273a71;
@@ -460,14 +653,13 @@ float: left;
     border: none;
     border-radius: 4px;
     resize: none;
-    &:focus{
+    &:focus {
       outline: none;
     }
   }
 }
 
-
-.send-btn-comment{
+.send-btn-comment {
   width: 290px;
   background: #17c2a4;
   text-transform: uppercase;
@@ -477,7 +669,7 @@ float: left;
   border: 1px solid #17c2a4;
   font-weight: 600;
   cursor: pointer;
-  &:focus{
+  &:focus {
     outline: none;
     border: 1px solid #17c2a4;
   }
@@ -486,20 +678,20 @@ float: left;
 /* ===========================================================
 ================----------footer--------------================
 ============================================================== */
-footer{
+footer {
   padding: 40px 0;
   background: #344b8e;
 }
-.soc-footer-icon-wrapper{
+.soc-footer-icon-wrapper {
   width: 80%;
   margin: 0 auto;
-  a{
+  a {
     font-size: 24px;
     font-weight: 600;
-    transition: .3s linear;
-    &:hover{
-    color: #30bae7;
+    transition: 0.3s linear;
+    &:hover {
+      color: #30bae7;
     }
   }
 }
-@import './media.scss';
+@import "./media.scss";
