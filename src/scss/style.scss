@@ -1,0 +1,151 @@
+@import './reset.scss';
+@import './mixins.scss';
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+  font-size: 18px;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* ===========================================================
+================----------HEADER--------------================
+============================================================== */
+header{
+  background: #87509c;
+}
+.header-menu-content{
+  li{
+    padding: 8px 14px;
+    border-radius: 3px;
+    display: inline-block;
+    transition: .3s linear;
+    a{
+      text-transform: uppercase;
+      font-size: 16px;
+      line-height: 18px;
+    }
+    &:hover{
+      background: #643a79;
+    }
+  }
+}
+.banner-text{
+  padding-top: 239px;
+  padding-bottom: 269px;
+  margin: 0 auto;
+  text-align: center;
+  p{
+    font-size: 42px;
+    line-height: 48px;
+    color: #fff;
+    font-weight: 700;
+    padding-bottom: 55px;
+  }
+  button{
+    background: #eb7d4b;
+    color: #fff;
+    padding: 27px 80px;
+    border-radius: 4px;
+    border: 1px solid #eb7d4b;
+    &:focus{
+      outline: none;
+      border: 1px solid #c86a40;
+    }
+  }
+}
+
+/* ===========================================================
+================----------BANNER--------------================
+============================================================== */
+.services{
+  background: #17c2a4;
+  padding: 60px 0;
+}
+.central-heading{
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  h2{
+    font-size: 40px;
+    font-weight: 700;
+    padding: 45px 0;
+    position: relative;
+    display: block;
+    &:before{
+      content: '';
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90px;
+      height: 4px;
+      background: #14a58c;
+    }
+  }
+  p{
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+.card-service{
+  width: 300px;
+  color: #fff;
+  text-align: center;
+  h3{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 55px 0 25px 0;
+  }
+  p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+}
+/* ===========================================================
+================----------team--------------================
+============================================================== */
+
+
+
+
+
+
+
+
+/* ===========================================================
+================----------contact----------================
+============================================================== */
+
+/* ===========================================================
+================----------footer--------------================
+============================================================== */
+
+
+@import './media.scss';
