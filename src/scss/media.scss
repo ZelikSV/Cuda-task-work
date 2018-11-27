@@ -135,41 +135,143 @@
     }
 }
 @media only screen and (max-width: 576px) {
-    .card-service, .skill-card, .team-card {
-        width: 100%;
-        padding-top: 40px;
+    header {
+        padding: 25px 0;
+    }
+    .banner-text button {
+        padding: 15px 0;
+        width: 200px;
+    }
+    .team-card{
+        .avatar-team{
+            width: 90px;
+            height: 90px;
+        }
+        h3{
+            font-size: 18px;
+        }
+        h4{
+            font-size: 15px;
+        }
+        p{
+            font-size: 14px;
+        }
+        .soc-icons{
+            a{
+                font-size: 17px;
+                padding: 8px;
+            }
+            
+        }
+        
+    }
+    .team-card .soc-icons a.fa-facebook{
+        padding: 8px 12px;
+    }
+    .card-service{
+        .img-service-card{
+            height: 90px;
+        }
+        h3{
+            font-size: 18px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+    .central-heading h2 {
+        font-size: 25px;
+    }
+    .central-heading p {
+        font-size: 16px;
+        line-height: 26px;
     }
     .banner-text p{
         font-size: 18px;
         line-height: 30px;
     }
+    .portfolio,.services {
+        padding: 35px 0;
+    }
     .portfolio-card {
         width: 100%;
         margin: 0 auto;
     }
+    .btn-more-portfolio {
+        width: 230px;
+        padding: 15px 0;
+    }
     .soc-footer-icon-wrapper{
         width: 100%;
+        text-align: center;
         a{
             width: 25%;
+            padding: 10px 0;
         }
+    }
+    .img-portfolio-card{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .about {
+        padding: 40px 0;
+    }
+    .skills {
+        padding: 50px 0 30px;
     }
     .form-send{
         width: 100%;
     }
+    .send-btn-comment {
+        width: 250px;
+        padding: 15px 0;
+    }
+    .form-send .comment-wrapper p {
+        top: 30px;
+    }
+    .form-wrapper {
+        padding: 25px 0;
+    }
 }
 
 @media only screen and (max-width: 450px) {
-    
+    .card-service, .skill-card, .team-card{
+        width: 75%;
+        float: none;
+        margin: 0 auto;
+    }
+    .tabs-nav{
+        width: 100%;
+        li{
+            padding: 8px 18px;
+        }
+    }
 }
 
 @media only screen and (max-width: 415px) {
-    
+    .tabs-nav li {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+    .card-service, .skill-card, .team-card{
+        width: 90%;
+    }
+    .feedback-card .feedback-text-part {
+        width: 100%;
+        padding-left: 0px;
+    }
+    .feedback-avatar{
+        float: none;
+        margin: 0 auto;
+    }
 }
 @media only screen and (max-width: 376px) {
     
 }
 @media only screen and (max-width: 375px) {
-
+    .portfolio-card h3 {
+        font-size: 14px;
+    }
 }
 @media only screen and (max-width: 320px) {
     
