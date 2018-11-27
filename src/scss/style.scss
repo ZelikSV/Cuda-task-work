@@ -67,10 +67,12 @@ header{
     padding-bottom: 55px;
   }
   button{
+    width: 290px;
     background: #eb7d4b;
     color: #fff;
-    padding: 27px 80px;
+    padding: 27px 0;
     border-radius: 4px;
+    font-weight: 600;
     border: 1px solid #eb7d4b;
     &:focus{
       outline: none;
@@ -112,10 +114,15 @@ header{
     line-height: 26px;
   }
 }
+.card-services-wrapper{
+  min-height: 400px;
+  width: 100%;
+}
 .card-service{
-  width: 300px;
+  width: 25%;
   color: #fff;
   text-align: center;
+  float: left;
   h3{
     font-size: 24px;
     font-weight: 700;
@@ -131,21 +138,368 @@ header{
 /* ===========================================================
 ================----------team--------------================
 ============================================================== */
+.team{
+  background: #e7f1f8;
+  .central-heading{
+    color: #3c4761;
+    h2:before{
+      background: rgba(200, 217, 229, .8);
+    }
+  }
+}
+.team-cards-wrapper{
+  padding: 50px 0;
+  min-height: 600px;
+  width: 100%;
+}
+.team-card{
+  width: 250px;
+  text-align: center;
+  float: left;
+  padding: 20px;
+  h3{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 45px;
+  }
+  h4{
+    font-size: 16px;
+    color: #30bae7;
+    font-weight: 400;
+    padding: 13px 0;
+  }
+  p{
+    font-weight: 300;
+    color: #535e75;
+    padding: 13px 0;
+  }
+  .avatar-team{
+    width: 196px;
+    height: 196px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #ccc;
+  }
+  .soc-icons{
+    a{
+      background: #bdd1df;
+      border-radius: 50%;
+      padding: 10px;
+      transition: .3s linear;
+      &.fa-facebook{
+        padding: 10px 13px;
+      }
+      &:hover{
+        background: #6eb9ec;
+      }
+    }
+  }
+}
 
+/* ===========================================================
+================----------skills----------================
+============================================================== */
+.skills{
+  .central-heading{
+    color: #3c4761;
+    h2:before{
+      background: rgba(200, 217, 229, .8);
+    }
+  }
+}
+.skill-cards-wrapper{
+  min-height: 290px;
+  padding: 50px 0;
+  width: 100%;
+}
+.skill-card{
+  $diameter: 200px;
+$accent: red;
+$gray: gray;
+$progress: 270; // Угол
+$border: 10px;
+float: left;
+.progress {
+  position: relative;
+  width: $diameter;
+  height: $diameter;
+  border-radius: 50%;
+  background-color: $accent;
+  &::before {
+    position: absolute;
+    content: '';
+    @if $progress > 180 {
+      background-color: $accent;
+    }
+    @if $progress <= 180 {
+      background-color: $gray;
+    }
+    width: $diameter;
+    height: $diameter;
+    border-radius: 50%;
+    clip: rect(0, #{$diameter/2}, $diameter, 0);
+    transform-origin: 50% 50%;
+    @if $progress <= 180 {
+      transform: rotate(#{180 + $progress}deg);
+    }
+    @if $progress > 180 {
+      transform: rotate(#{180 + $progress - 180}deg);
+    }
+    z-index: 1;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    background-color: $gray;
+    width: $diameter;
+    height: $diameter;
+    border-radius: 50%;
+    clip: rect(0, #{$diameter/2}, $diameter, 0);
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+  }
+  .center {
+    position: absolute;
+    top: $border;
+    left: $border;
+    width: #{$diameter - 2 * $border};
+    height: #{$diameter - 2 * $border};
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    h2{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 40px;
+    }
+  }
+}
+}
+/* ===========================================================
+================----------portfolio--------------================
+============================================================== */
+.portfolio{
+  background: #ffdd99;
+  padding: 100px 0;
+  text-align: center;
+  .central-heading{
+    color: #3c4761;
+    h2:before{
+      background: #e5c37f;
+    }
+  }
+}
 
+.tabs-nav{
+  width: 390px;
+  margin: 0 auto;
+  padding: 45px 10px;
+  li{
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 4px;
+    background: #ebc985;
+    cursor: pointer;
+    transition: .3s linear;
+    &.active{
+      background: #fff;
+    }
+    &:hover{
+      background: #fff;
+    }
+  }
+}
+.tabs-content{
+  position: relative;
+  width: 100%;
+}
+.portfolio-cards-wrapper {
+  position: absolute;
+  transform: scale(0);
+}
+.portfolio-cards-wrapper.active {
+  transform: scale(1);
+  transition: all .5s linear;
+  position: static;
+}
+.portfolio-card{
+  width: 45%;
+  text-align: center;
+  float: left;
+  margin: 0 20px;
+  h3{
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 25px 0;
+  }
+}
 
+.btn-more-portfolio{
+  width: 290px;
+  background: #17c2a4;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 29px 0;
+  border-radius: 4px;
+  border: 1px solid #17c2a4;
+  font-weight: 600;
+  cursor: pointer;
+  &:focus{
+    outline: none;
+    border: 1px solid #17c2a4;
+  }
+}
+/* ===========================================================
+================----------about--------------================
+============================================================== */
+.about{
+  background: #d74680;
+  .central-heading{
+    h2:before{
+      background: #b73c6d;
+    }
+  }
+}
 
-
-
+.feedback-wrapper{
+  width: 100%;
+  min-height: 580px;
+}
+.feedback-card{
+  width: 45%;
+  color: #e7f1f8;
+  float: left;
+  text-align: left;
+  p{
+    font-size: 21px;
+    line-height: 34px;
+    font-style: italic;
+  }
+  h3{
+   font-size: 24px;
+   font-weight: 700;
+   text-transform: uppercase;
+  }
+  h4{
+    font-size: 18px;
+    color: #fac996;
+  }
+}
+.feedback-avatar{
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  background: #ccc;
+}
 
 
 /* ===========================================================
-================----------contact----------================
+================----------form--------------================
 ============================================================== */
+.form-wrapper{
+  background: #3c5499;
+  padding: 100px 0;
+  .central-heading{
+    h2:before{
+      background: #273a71;
+    }
+  }
+}
+.form-send{
+  width: 80%;
+  min-height: 495px;
+  margin: 0 auto;
+  text-align: center;
+  label{
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    height: 80px;
+    p{
+      font-size: 18px;
+      color:#e7f1f8;
+      position: absolute;
+      top: 50%;
+      left: 25px;
+      transform: translate(0,-50%);
+      span{
+        color: #ff0000;
+      }
+    }
+  }
+  .comment-wrapper{
+    width: 100%;
+    height: 200px;
+    p{
+      top: 22px;
+    }
+  }
+  input{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #273a71;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    &:focus{
+      outline: none;
+    }
+  }
+  textarea{
+    width: 100%;
+    height: 200px;
+    background: #273a71;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    resize: none;
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+
+.send-btn-comment{
+  width: 290px;
+  background: #17c2a4;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 24px 0;
+  border-radius: 4px;
+  border: 1px solid #17c2a4;
+  font-weight: 600;
+  cursor: pointer;
+  &:focus{
+    outline: none;
+    border: 1px solid #17c2a4;
+  }
+}
 
 /* ===========================================================
 ================----------footer--------------================
 ============================================================== */
-
-
+footer{
+  padding: 40px 0;
+  background: #344b8e;
+}
+.soc-footer-icon-wrapper{
+  width: 80%;
+  margin: 0 auto;
+  a{
+    font-size: 24px;
+    font-weight: 600;
+    transition: .3s linear;
+    &:hover{
+    color: #30bae7;
+    }
+  }
+}
 @import './media.scss';
