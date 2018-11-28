@@ -1,0 +1,76 @@
+  .portfolio {
+    background: #ffdd99;
+    padding: 100px 0;
+    text-align: center;
+    .central-heading {
+      color: #3c4761;
+      h2:before {
+        background: #e5c37f;
+      }
+    }
+  }
+  
+  .tabs-nav {
+    width: 400px;
+    margin: 0 auto;
+    padding: 45px 10px;
+    li {
+      display: inline-block;
+      padding: 10px 25px;
+      border-radius: 4px;
+      background: #ebc985;
+      cursor: pointer;
+      transition: 0.3s linear;
+      margin: 0 5px;
+      &.active {
+        background: #fff;
+      }
+      &:hover {
+        background: #fff;
+      }
+    }
+  }
+  .tabs-content {
+    position: relative;
+    width: 100%;
+  }
+  .portfolio-cards-wrapper {
+    position: absolute;
+    transform: scale(0);
+  }
+  .portfolio-cards-wrapper.active {
+    transform: scale(1);
+    transition: all 0.5s linear;
+    position: static;
+  }
+  .portfolio-card {
+    width: 50%;
+    text-align: center;
+    float: left;
+    padding:0 20px;
+    h3 {
+      font-weight: 400;
+      font-size: 18px;
+      text-transform: uppercase;
+      padding: 25px 0;
+    }
+  }
+  
+  .btn-more-portfolio {
+    width: 290px;
+    background: #17c2a4;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 29px 0;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 5px 0px 0px #15a088;
+    font-weight: 600;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+    &:active{
+      box-shadow: 0px 1px 0px 0px;
+    }
+  }

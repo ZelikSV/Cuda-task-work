@@ -1,0 +1,18 @@
+footer {
+    padding: 40px 0;
+    background: #344b8e;
+  }
+  .soc-footer-icon-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    a {
+      width: 14%;
+      font-size: 24px;
+      font-weight: 600;
+      transition: 0.3s linear;
+      float: left;
+      &:hover {
+        color: #30bae7;
+      }
+    }
+  }

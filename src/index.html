@@ -13,9 +13,9 @@
   </head>
 
   <body>
-    <header class="header" role="banner">
+    <header class="header" id="home">
       <div class="container">
-        <div class="header-wrapper">
+        <div class="header-wrapper clearfix">
           <h1 class="logo">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -32,29 +32,33 @@
             </svg>
           </h1>
           <nav class="header-menu">
-            <div class="burger-btn"><span></span></div>
+            <label class="burger-btn" for="menu-btn">
+              <span></span>
+			</label>
+			<input type="checkbox" class
+			="checkbox-menu-btn" name="menu-btn" id="menu-btn">
             <ul class="header-menu-content">
               <li><a href="#home">Home</a></li>
-              <li><a href="#home">about</a></li>
-              <li><a href="#home">work</a></li>
-              <li><a href="#home">blog</a></li>
-              <li><a href="#home">contact</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#portfolio">work</a></li>
+              <li><a href="#services">blog</a></li>
+              <li><a href="#contacts">contact</a></li>
             </ul>
           </nav>
-          <div class="banner-text">
-            <p>
-              Hi there! We are the new kids on the block and we build awesome
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Excepturi, beatae.
-            </p>
-            <button>WORK WITH US!</button>
-          </div>
+        </div>
+        <div class="banner-text">
+          <p>
+            Hi there! We are the new kids on the block and we build awesome
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Excepturi, beatae.
+          </p>
+          <button>WORK WITH US!</button>
         </div>
       </div>
     </header>
 
-    <main class="main" role="main">
-      <section class="services">
+    <main class="main">
+      <section class="services" id="services">
         <div class="container">
           <div class="central-heading">
             <h2>SERVICES WE PROVIDE</h2>
@@ -269,7 +273,7 @@
           </div>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="container">
           <div class="central-heading">
             <h2>OUR PORTFOLIO</h2>
@@ -395,7 +399,7 @@
           <button class="btn-more-portfolio">LOAD MORE PROJECTS</button>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="central-heading">
             <h2>WHAT POEPLE SAY ABOUT US</h2>
@@ -449,7 +453,7 @@
           </div>
         </div>
       </section>
-      <section class="form-wrapper">
+      <section class="form-wrapper" id="contacts">
         <div class="container">
           <div class="central-heading">
             <h2>GET IN TOUCH</h2>
@@ -458,17 +462,17 @@
             </p>
           </div>
           <form action="#" class="form-send clearfix">
-            <label for="name">
-              <input type="text" name="name" id="name" />
+            <label>
+              <input type="text" name="name" required pattern="[A-Za-z0-9]{4,12}" autocomplete="off" />
               <p>Your Name<span>*</span></p>
             </label>
-            <label for="email">
-              <input type="text" name="email" id="email" />
+            <label>
+              <input type="email" name="email" autocomplete="off" />
               <p>Your Email<span>*</span></p>
             </label>
             <label class="comment-wrapper">
               <p>Your Comment<span>*</span></p>
-              <textarea name="comment" id="comment" placeholder=""></textarea>
+              <textarea name="comment"></textarea>
             </label>
 
             <button class="send-btn-comment">send message</button>

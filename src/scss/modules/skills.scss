@@ -1,0 +1,276 @@
+  .skills {
+    padding: 100px 0 50px 0;
+    .central-heading {
+      color: #3c4761;
+      h2:before {
+        background: rgba(200, 217, 229, 0.8);
+      }
+    }
+  }
+  .skill-cards-wrapper {
+    padding: 50px 0;
+    width: 100%;
+  }
+  .skill-card {
+    width: 25%;
+    $diameter: 160px;
+    $accent: #30bae7;
+    $gray: #dfe8ed;
+    $progress: 320; // Угол
+    $border: 13px;
+    float: left;
+    h3{
+      text-align: center;
+      padding: 30px 0;
+    }
+    .progress {
+      margin: 0 auto;
+      position: relative;
+      width: $diameter;
+      height: $diameter;
+      border-radius: 50%;
+      background-color: $accent;
+      &::before {
+        position: absolute;
+        content: "";
+        @if $progress > 180 {
+          background-color: $accent;
+        }
+        @if $progress <= 180 {
+          background-color: $gray;
+        }
+        width: $diameter;
+        height: $diameter;
+        border-radius: 50%;
+        clip: rect(0, #{$diameter/2}, $diameter, 0);
+        transform-origin: 50% 50%;
+        @if $progress <= 180 {
+          transform: rotate(#{180 + $progress}deg);
+        }
+        @if $progress > 180 {
+          transform: rotate(#{180 + $progress - 180}deg);
+        }
+        z-index: 1;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        background-color: $gray;
+        width: $diameter;
+        height: $diameter;
+        border-radius: 50%;
+        clip: rect(0, #{$diameter/2}, $diameter, 0);
+        transform-origin: 50% 50%;
+        transform: rotate(0deg);
+      }
+      .center {
+        position: absolute;
+        top: $border;
+        left: $border;
+        width: #{$diameter - 2 * $border};
+        height: #{$diameter - 2 * $border};
+        background-color: white;
+        border-radius: 50%;
+        z-index: 2;
+        h2 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 40px;
+        }
+      }
+    }
+  }
+  .skill-card:nth-child(2) {
+    $diameter: 160px;
+    $accent: #d74680;
+    $gray: #dfe8ed;
+    $progress: 270; // Угол
+    $border: 13px;
+    .progress {
+      position: relative;
+      width: $diameter;
+      height: $diameter;
+      border-radius: 50%;
+      background-color: $accent;
+      &::before {
+        position: absolute;
+        content: "";
+        @if $progress > 180 {
+          background-color: $accent;
+        }
+        @if $progress <= 180 {
+          background-color: $gray;
+        }
+        width: $diameter;
+        height: $diameter;
+        border-radius: 50%;
+        clip: rect(0, #{$diameter/2}, $diameter, 0);
+        transform-origin: 50% 50%;
+        @if $progress <= 180 {
+          transform: rotate(#{180 + $progress}deg);
+        }
+        @if $progress > 180 {
+          transform: rotate(#{180 + $progress - 180}deg);
+        }
+        z-index: 1;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        background-color: $gray;
+        width: $diameter;
+        height: $diameter;
+        border-radius: 50%;
+        clip: rect(0, #{$diameter/2}, $diameter, 0);
+        transform-origin: 50% 50%;
+        transform: rotate(0deg);
+      }
+      .center {
+        position: absolute;
+        top: $border;
+        left: $border;
+        width: #{$diameter - 2 * $border};
+        height: #{$diameter - 2 * $border};
+        background-color: white;
+        border-radius: 50%;
+        z-index: 2;
+        h2 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 40px;
+        }
+      }
+    }
+  }
+  .skill-card:nth-child(3) {
+    $diameter: 160px;
+    $accent: #15c7a8;
+    $gray: #dfe8ed;
+    $progress: 250; // Угол
+    $border: 13px;
+    .progress {
+      position: relative;
+      width: $diameter;
+      height: $diameter;
+      border-radius: 50%;
+      background-color: $accent;
+      &::before {
+        position: absolute;
+        content: "";
+        @if $progress > 180 {
+          background-color: $accent;
+        }
+        @if $progress <= 180 {
+          background-color: $gray;
+        }
+        width: $diameter;
+        height: $diameter;
+        border-radius: 50%;
+        clip: rect(0, #{$diameter/2}, $diameter, 0);
+        transform-origin: 50% 50%;
+        @if $progress <= 180 {
+          transform: rotate(#{180 + $progress}deg);
+        }
+        @if $progress > 180 {
+          transform: rotate(#{180 + $progress - 180}deg);
+        }
+        z-index: 1;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        background-color: $gray;
+        width: $diameter;
+        height: $diameter;
+        border-radius: 50%;
+        clip: rect(0, #{$diameter/2}, $diameter, 0);
+        transform-origin: 50% 50%;
+        transform: rotate(0deg);
+      }
+      .center {
+        position: absolute;
+        top: $border;
+        left: $border;
+        width: #{$diameter - 2 * $border};
+        height: #{$diameter - 2 * $border};
+        background-color: white;
+        border-radius: 50%;
+        z-index: 2;
+        h2 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 40px;
+        }
+      }
+    }
+  }
+  .skill-card:nth-child(4) {
+    $diameter: 160px;
+    $accent: #eb7d4b;
+    $gray: #dfe8ed;
+    $progress: 300; // Угол
+    $border: 13px;
+    .progress {
+      position: relative;
+      width: $diameter;
+      height: $diameter;
+      border-radius: 50%;
+      background-color: $accent;
+      &::before {
+        position: absolute;
+        content: "";
+        @if $progress > 180 {
+          background-color: $accent;
+        }
+        @if $progress <= 180 {
+          background-color: $gray;
+        }
+        width: $diameter;
+        height: $diameter;
+        border-radius: 50%;
+        clip: rect(0, #{$diameter/2}, $diameter, 0);
+        transform-origin: 50% 50%;
+        @if $progress <= 180 {
+          transform: rotate(#{180 + $progress}deg);
+        }
+        @if $progress > 180 {
+          transform: rotate(#{180 + $progress - 180}deg);
+        }
+        z-index: 1;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        background-color: $gray;
+        width: $diameter;
+        height: $diameter;
+        border-radius: 50%;
+        clip: rect(0, #{$diameter/2}, $diameter, 0);
+        transform-origin: 50% 50%;
+        transform: rotate(0deg);
+      }
+      .center {
+        position: absolute;
+        top: $border;
+        left: $border;
+        width: #{$diameter - 2 * $border};
+        height: #{$diameter - 2 * $border};
+        background-color: white;
+        border-radius: 50%;
+        z-index: 2;
+        h2 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 40px;
+        }
+      }
+    }
+  }

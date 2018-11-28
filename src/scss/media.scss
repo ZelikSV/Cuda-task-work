@@ -8,19 +8,14 @@
    .container{
        width: 960px;
    }
-.form-send label {
-    width: 360px;
-}
-
+  
   
 }
 @media only screen and (max-width: 992px) {
     .container{
         width: 745px;
     }
-    .header-menu-content{
-        padding-top: 7px;
-    }
+    
     .banner-text p{
         font-size: 30px;
     }
@@ -43,7 +38,7 @@
     }
     
     .portfolio-card{
-        width: 44%;
+        width: 50%;
     }
     .tabs-content{
         min-height: 600px;
@@ -61,9 +56,7 @@
             font-size: 16px;
         }
     }
-    .form-send label{
-        width: 275px;
-    }
+    
     .soc-footer-icon-wrapper a{
         font-size: 16px;
     }
@@ -74,19 +67,37 @@
         width: 100%;
     }
     .header-menu-content{
-        transform: rotateX(-90deg);
-        transform-origin: 0 100% 0;
+        transform: rotateY(-90deg);
+        transform-origin: 100% 50% 0%;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        right: 0;
+        background: #87509c;
+        transition: .3s linear;
         li{
             display: block;
-            text-align: right;
+            text-align: center;
         }
     }
+ 
+    .checkbox-menu-btn:checked+.header-menu-content{
+        transform: rotateX(0deg);
+    }
+    label.checkbox-menu-btn:checked span{
+        background: red;
+    }
     .burger-btn{
+        display: block;
         width: 20px;
-        height: 20px;
+        height: 34px;
         position: relative;
-        margin-left: auto;
+       float: right;
         cursor: pointer;
+        input{
+            display: none;
+        }
+        
         span{
             width: 100%;
             background: #fff;
@@ -118,13 +129,17 @@
     }
     header .header-menu {
         width: 200px;
+        position: relative;
     }
     .banner-text {
-        padding-top: 25px;
+        padding-top: 80px;
         padding-bottom: 20px;
     }
     .banner-text p {
         font-size: 25px;
+    }
+    .portfolio-card:nth-child(3){
+        clear: both;
     }
     .feedback-card{
         width: 100%;
@@ -195,6 +210,7 @@
     }
     .portfolio-card {
         width: 100%;
+        padding: 0;
         margin: 0 auto;
     }
     .btn-more-portfolio {
@@ -265,12 +281,13 @@
         margin: 0 auto;
     }
 }
-@media only screen and (max-width: 376px) {
-    
-}
+
 @media only screen and (max-width: 375px) {
     .portfolio-card h3 {
         font-size: 14px;
+    }
+    header .header-menu{
+        width: 150px;
     }
 }
 @media only screen and (max-width: 320px) {
