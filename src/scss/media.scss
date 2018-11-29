@@ -1,47 +1,66 @@
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1450px) {
     .container{
-        width: 1160px;
+        width: 1100px;
+    }
+    .banner-text {
+        padding: 100px 15% 145px;
+    }
+    .banner-text p {
+        margin-bottom: 59px;
+    }
+    .feedback-card:nth-child(1),
+    .feedback-card:nth-child(2){
+        margin-bottom: 135px;
+    }
+    .soc-footer-icon-wrapper {
+        width: 100%;
     }
    
+ }
+@media only screen and (max-width: 1400px) {
+    .banner-text {
+        padding: 100px 10% 145px;
+    }
  }
 @media only screen and (max-width: 1200px) {
    .container{
        width: 960px;
    }
-  
+   header .header-menu {
+    width: 45%;
+}
   
 }
 @media only screen and (max-width: 992px) {
     .container{
         width: 745px;
     }
-    
+    header .header-menu {
+        width: 55%;
+    }
+    .btn{
+        width: 250px;
+        font-size: 16px;
+        line-height: 50px;
+    }
     .banner-text p{
         font-size: 30px;
     }
-    .banner-text button{
-        padding: 20px 0;
-    }
+    
     .card-service,
     .team-card,
     .skill-card{
         width: 50%;
-        padding-top: 40px;
+        margin-bottom: 50px;
     }
     .card-service:nth-child(3),
     .team-card:nth-child(3),
     .skill-card:nth-child(3){
         clear: both;
     }
-    .card-services-wrapper{
-        padding: 40px 0;
-    }
     
     .portfolio-card{
         width: 50%;
-    }
-    .tabs-content{
-        min-height: 600px;
     }
     .feedback-card .feedback-text-part{
         width: 70%;
@@ -56,15 +75,19 @@
             font-size: 16px;
         }
     }
+    .feedback-card:nth-child(1), .feedback-card:nth-child(2){
+        margin-bottom: 65px;
+    }
     
-    .soc-footer-icon-wrapper a{
-        font-size: 16px;
+    .soc-footer-icon-wrapper li a{
+        font-size: 20px;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .container{
         width: 100%;
+        padding: 15px;
     }
     .header-menu-content{
         transform: rotateY(-90deg);
@@ -127,35 +150,71 @@
             }
         }
     }
-    header .header-menu {
+    header {
+        padding: 0;
+        .header-menu {
         width: 200px;
         position: relative;
     }
+    .logo{
+        padding-left: 0;
+    }
+    }
     .banner-text {
         padding-top: 80px;
-        padding-bottom: 20px;
+        padding-bottom: 0;
+        .btn{
+            margin-bottom: 60px;
+        }
     }
     .banner-text p {
         font-size: 25px;
     }
-    .portfolio-card:nth-child(3){
-        clear: both;
+    .services,
+    .team,
+    .portfolio,
+    .skills,
+    .about,
+    .form-wrapper{
+        padding-top: 65px;
+    }
+    .central-heading h2 {
+        font-size: 30px;
+    }
+    .central-heading p {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0;
+    }
+    .portfolio-card {
+        width: 70%;
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 50px;
     }
     .feedback-card{
         width: 100%;
-        padding: 35px 0;
+        padding: 0;
     }
     .form-send label {
         width: 100%;
     }
+    .soc-footer-icon-wrapper li {
+        width: calc(100%/5);
+        
+    }
+    .soc-footer-icon-wrapper li:nth-child(1),
+    .soc-footer-icon-wrapper li:nth-child(2),
+    .soc-footer-icon-wrapper li:nth-child(3),
+    .soc-footer-icon-wrapper li:nth-child(4),{
+        margin-bottom: 20px;
+    }
 }
 @media only screen and (max-width: 576px) {
-    header {
-        padding: 25px 0;
-    }
-    .banner-text button {
-        padding: 15px 0;
+    .btn {
         width: 200px;
+        font-size: 13px;
+        line-height: 40px;
     }
     .team-card{
         .avatar-team{
@@ -180,10 +239,23 @@
         }
         
     }
+    .services,
+    .team,
+    .portfolio,
+    .skills,
+    .about,
+    .form-wrapper{
+        padding-bottom: 25px;
+    }
     .team-card .soc-icons a.fa-facebook{
         padding: 8px 12px;
     }
+    .card-services-wrapper,
+    .skill-cards-wrapper{
+        margin-bottom: 0px;
+    }
     .card-service{
+        padding: 0 10px;
         .img-service-card{
             height: 90px;
         }
@@ -205,48 +277,30 @@
         font-size: 18px;
         line-height: 30px;
     }
-    .portfolio,.services {
-        padding: 35px 0;
-    }
+
     .portfolio-card {
         width: 100%;
         padding: 0;
         margin: 0 auto;
     }
-    .btn-more-portfolio {
-        width: 230px;
-        padding: 15px 0;
-    }
-    .soc-footer-icon-wrapper{
+    .tabs-nav{
         width: 100%;
-        text-align: center;
-        a{
-            width: 25%;
-            padding: 10px 0;
+        li{
+            font-size: 15px;
         }
+        
     }
     .img-portfolio-card{
         width: 60%;
         margin: 0 auto;
     }
-    .about {
-        padding: 40px 0;
-    }
-    .skills {
-        padding: 50px 0 30px;
-    }
+    
     .form-send{
         width: 100%;
     }
-    .send-btn-comment {
-        width: 250px;
-        padding: 15px 0;
-    }
+    
     .form-send .comment-wrapper p {
         top: 30px;
-    }
-    .form-wrapper {
-        padding: 25px 0;
     }
 }
 
@@ -255,6 +309,7 @@
         width: 75%;
         float: none;
         margin: 0 auto;
+        margin-bottom: 30px;
     }
     .tabs-nav{
         width: 100%;
@@ -262,13 +317,14 @@
             padding: 8px 18px;
         }
     }
+    .team-card p {
+        font-size: 14px;
+        line-height: 23px;
+    }
 }
 
 @media only screen and (max-width: 415px) {
-    .tabs-nav li {
-        padding: 8px 10px;
-        font-size: 14px;
-    }
+   
     .card-service, .skill-card, .team-card{
         width: 90%;
     }
@@ -280,14 +336,34 @@
         float: none;
         margin: 0 auto;
     }
+    .feedback-card{
+        text-align: center;
+    }
+    .soc-footer-icon-wrapper li{
+        width: calc(100%/3);
+    }
+    .soc-footer-icon-wrapper li:nth-child(5), .soc-footer-icon-wrapper li:nth-child(6){
+        margin-bottom: 30px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
     .portfolio-card h3 {
         font-size: 14px;
     }
+    .img-portfolio-card {
+        width: 90%;
+        margin: 0 auto;
+    }
     header .header-menu{
         width: 150px;
+    }
+    .tabs-nav li {
+        font-size: 13px;
+        padding: 8px 13px;
+    }
+    .form-send label p{
+        font-size: 16px;
     }
 }
 @media only screen and (max-width: 320px) {

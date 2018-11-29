@@ -1,19 +1,785 @@
 @import "./reset.scss";
 
-@import "./modules/header.scss";
+// =========HEADER================
 
-@import "./modules/services.scss";
+img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container {
+    width: 1100px;
+    margin: 0 auto;
+  }
+  
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  html {
+    font-size: 10px;
+    font-family: "Titillium Web", sans-serif;
+  }
+  
+  body {
+    font-size: 18px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .clearfix:before,
+  .clearfix:after {
+    content: "";
+    display: table;
+  }
+   
+  .clearfix:after {
+    clear: both;
+  }
+   
+  .clearfix {
+    zoom: 1; /* ie 6/7 */
+  }
+header {
+    background: #87509c;
+	padding: 30px 0;
+	position: sticky;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+  .logo{ 
+	float: left;
+	padding-left: 40px;
+    svg{
+      height: auto;
+      width: 100%;
+    }
+  }
+  .header-menu{
+	float: right;
+	width: 40%;
+  }
+  }
+  .checkbox-menu-btn{
+    display: none;
+  }
+  .burger-btn{
+    display: none;
+  }
+  .header-menu-content {
+    li {
+      padding: 10px 15px;
+      border-radius: 4px;
+      display: inline-block;
+      transition: 0.3s linear;
+      a {
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 18px;
+      }
+      &:hover {
+        background: #643a79;
+	  }
+	  &.active{
+		background: #643a79;
+	  }
+	}
+	
+  }
+ 
+// =========BANNER================
 
-@import "./modules/team.scss";
+.banner-text {
+	padding: 180px 25% 145px 25%;
+	background: #87509c;
+    text-align: center;
+    p {
+      font-size: 42px;
+      line-height: 48px;
+      color: #fff;
+	  font-weight: 700;
+      margin-bottom: 50px;
+    }
+  }
+.btn{
+	width: 290px;
+	background: #eb7d4b;
+	color: #fff;
+	line-height: 65px;
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 400;
+	border: none;
+	box-shadow: 0px 5px 0px 0px #c86a40;
+  cursor: pointer;
+	&:focus {
+	  outline: none;
+	}
+	&:active{
+	  box-shadow: 0px 0px 1px 0px;
+	}
+}
+// =========SERVICES================
 
-@import "./modules/skills.scss";
+.services {
+    background: #17c2a4;
+    padding: 112px 0 33px 0;
+  }
+  .central-heading {
+    margin: 0 auto;
+    text-align: center;
+	color: #fff;
+	margin-bottom: 80px;
+    h2 {
+      font-size: 40px;
+	  font-weight: 700;
+	  margin-bottom: 38px;
+      position: relative;
+      display: block;
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90px;
+        height: 4px;
+        background: #14a58c;
+      }
+    }
+    p {
+      font-size: 18px;
+	  line-height: 26px;
+	  padding: 0 15%;
+    }
+  }
+  
+  .card-services-wrapper {
+    width: 100%;
+   margin-bottom: 70px;
+  }
+  .card-service {
+    width: 25%;
+    color: #fff;
+    text-align: center;
+    float: left;
+    padding: 0 25px;
+    .img-service-card{
+	  height: 125px;
+	  margin-bottom: 60px;
+      svg{
+        height: 100%;
+        width: auto;
+      }
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 300;
+    }
+  }
 
-@import "./modules/portfolio.scss";
+// =========TEAM================
 
-@import "./modules/about.scss";
+.team {
+	background: #e7f1f8;
+	padding: 114px 0 123px 0;
+    .central-heading {
+      color: #3c4761;
+      h2:before {
+        background: rgba(200, 217, 229, 0.8);
+      }
+    }
+  }
+  .team-cards-wrapper {
+    width: 100%;
+  }
+  .team-card {
+    width: 25%;
+    text-align: center;
+    float: left;
+	padding: 0 20px;
+	
+    h3 {
+      text-transform: uppercase;
+      font-size: 24px;
+	  font-weight: 700;
+	  margin-bottom: 10px;
+    }
+    h4 {
+      font-size: 16px;
+      color: #30bae7;
+      font-weight: 400;
+      margin-bottom: 28px;
+    }
+    p {
+      font-weight: 300;
+      color: #535e75;
+		margin-bottom: 33px;
+    }
+    .avatar-team {
+      width: 196px;
+      height: 196px;
+	  margin: 0 auto;
+	  margin-bottom: 40px;
+      border-radius: 50%;
+      background: #ccc;
+    }
+    .soc-icons {
+      a {
+        background: #bdd1df;
+        border-radius: 50%;
+        padding: 10px;
+        transition: 0.3s linear;
+        &.fa-facebook {
+          padding: 10px 13px;
+        }
+        &:hover {
+          background: #6eb9ec;
+        }
+      }
+    }
+  }
+  
 
-@import "./modules/form.scss";
+// =========SKILLS================
 
-@import "./modules/footer.scss";
+.skills {
+    padding: 110px 0 50px 0;
+    .central-heading {
+      color: #3c4761;
+      h2:before {
+        background: rgba(200, 217, 229, 0.8);
+      }
+    }
+  }
+  .skill-cards-wrapper {
+	margin-bottom: 50px;
+    width: 100%;
+  }
+  .skill-card {
+    width: 25%;
+    $diameter: 160px;
+    $accent: #30bae7;
+    $gray: #dfe8ed;
+    $progress: 320; // Угол
+    $border: 13px;
+    float: left;
+    h3{
+      text-align: center;
+      padding: 30px 0;
+    }
+    .progress {
+      margin: 0 auto;
+      position: relative;
+      width: $diameter;
+      height: $diameter;
+      border-radius: 50%;
+      background-color: $accent;
+      &::before {
+        position: absolute;
+        content: "";
+        @if $progress > 180 {
+          background-color: $accent;
+        }
+        @if $progress <= 180 {
+          background-color: $gray;
+        }
+        width: $diameter;
+        height: $diameter;
+        border-radius: 50%;
+        clip: rect(0, #{$diameter/2}, $diameter, 0);
+        transform-origin: 50% 50%;
+        @if $progress <= 180 {
+          transform: rotate(#{180 + $progress}deg);
+        }
+        @if $progress > 180 {
+          transform: rotate(#{180 + $progress - 180}deg);
+        }
+        z-index: 1;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        background-color: $gray;
+        width: $diameter;
+        height: $diameter;
+        border-radius: 50%;
+        clip: rect(0, #{$diameter/2}, $diameter, 0);
+        transform-origin: 50% 50%;
+        transform: rotate(0deg);
+      }
+      .center {
+        position: absolute;
+        top: $border;
+        left: $border;
+        width: #{$diameter - 2 * $border};
+        height: #{$diameter - 2 * $border};
+        background-color: white;
+        border-radius: 50%;
+        z-index: 2;
+        h2 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 40px;
+        }
+      }
+    }
+  }
+  .skill-card:nth-child(2) {
+    $diameter: 160px;
+    $accent: #d74680;
+    $gray: #dfe8ed;
+    $progress: 270; // Угол
+    $border: 13px;
+    .progress {
+      position: relative;
+      width: $diameter;
+      height: $diameter;
+      border-radius: 50%;
+      background-color: $accent;
+      &::before {
+        position: absolute;
+        content: "";
+        @if $progress > 180 {
+          background-color: $accent;
+        }
+        @if $progress <= 180 {
+          background-color: $gray;
+        }
+        width: $diameter;
+        height: $diameter;
+        border-radius: 50%;
+        clip: rect(0, #{$diameter/2}, $diameter, 0);
+        transform-origin: 50% 50%;
+        @if $progress <= 180 {
+          transform: rotate(#{180 + $progress}deg);
+        }
+        @if $progress > 180 {
+          transform: rotate(#{180 + $progress - 180}deg);
+        }
+        z-index: 1;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        background-color: $gray;
+        width: $diameter;
+        height: $diameter;
+        border-radius: 50%;
+        clip: rect(0, #{$diameter/2}, $diameter, 0);
+        transform-origin: 50% 50%;
+        transform: rotate(0deg);
+      }
+      .center {
+        position: absolute;
+        top: $border;
+        left: $border;
+        width: #{$diameter - 2 * $border};
+        height: #{$diameter - 2 * $border};
+        background-color: white;
+        border-radius: 50%;
+        z-index: 2;
+        h2 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 40px;
+        }
+      }
+    }
+  }
+  .skill-card:nth-child(3) {
+    $diameter: 160px;
+    $accent: #15c7a8;
+    $gray: #dfe8ed;
+    $progress: 250; // Угол
+    $border: 13px;
+    .progress {
+      position: relative;
+      width: $diameter;
+      height: $diameter;
+      border-radius: 50%;
+      background-color: $accent;
+      &::before {
+        position: absolute;
+        content: "";
+        @if $progress > 180 {
+          background-color: $accent;
+        }
+        @if $progress <= 180 {
+          background-color: $gray;
+        }
+        width: $diameter;
+        height: $diameter;
+        border-radius: 50%;
+        clip: rect(0, #{$diameter/2}, $diameter, 0);
+        transform-origin: 50% 50%;
+        @if $progress <= 180 {
+          transform: rotate(#{180 + $progress}deg);
+        }
+        @if $progress > 180 {
+          transform: rotate(#{180 + $progress - 180}deg);
+        }
+        z-index: 1;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        background-color: $gray;
+        width: $diameter;
+        height: $diameter;
+        border-radius: 50%;
+        clip: rect(0, #{$diameter/2}, $diameter, 0);
+        transform-origin: 50% 50%;
+        transform: rotate(0deg);
+      }
+      .center {
+        position: absolute;
+        top: $border;
+        left: $border;
+        width: #{$diameter - 2 * $border};
+        height: #{$diameter - 2 * $border};
+        background-color: white;
+        border-radius: 50%;
+        z-index: 2;
+        h2 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 40px;
+        }
+      }
+    }
+  }
+  .skill-card:nth-child(4) {
+    $diameter: 160px;
+    $accent: #eb7d4b;
+    $gray: #dfe8ed;
+    $progress: 300; // Угол
+    $border: 13px;
+    .progress {
+      position: relative;
+      width: $diameter;
+      height: $diameter;
+      border-radius: 50%;
+      background-color: $accent;
+      &::before {
+        position: absolute;
+        content: "";
+        @if $progress > 180 {
+          background-color: $accent;
+        }
+        @if $progress <= 180 {
+          background-color: $gray;
+        }
+        width: $diameter;
+        height: $diameter;
+        border-radius: 50%;
+        clip: rect(0, #{$diameter/2}, $diameter, 0);
+        transform-origin: 50% 50%;
+        @if $progress <= 180 {
+          transform: rotate(#{180 + $progress}deg);
+        }
+        @if $progress > 180 {
+          transform: rotate(#{180 + $progress - 180}deg);
+        }
+        z-index: 1;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        background-color: $gray;
+        width: $diameter;
+        height: $diameter;
+        border-radius: 50%;
+        clip: rect(0, #{$diameter/2}, $diameter, 0);
+        transform-origin: 50% 50%;
+        transform: rotate(0deg);
+      }
+      .center {
+        position: absolute;
+        top: $border;
+        left: $border;
+        width: #{$diameter - 2 * $border};
+        height: #{$diameter - 2 * $border};
+        background-color: white;
+        border-radius: 50%;
+        z-index: 2;
+        h2 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
+// =========PORTFOLIO================
+
+.portfolio {
+    background: #ffdd99;
+    padding: 100px 0;
+    text-align: center;
+    .central-heading {
+      color: #3c4761;
+      h2:before {
+        background: #e5c37f;
+      }
+    }
+  }
+  
+  .tabs-nav {
+    width: 420px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+    li {
+      display: inline-block;
+      padding: 10px 25px;
+      border-radius: 4px;
+      background: #ebc985;
+	  cursor: pointer;
+	  text-transform: uppercase;
+      transition: 0.3s linear;
+      margin: 0 5px;
+      &.active {
+        background: #fff;
+      }
+      &:hover {
+        background: #fff;
+      }
+    }
+  }
+  .tabs-content {
+    position: relative;
+	width: 100%;
+	margin-bottom: 30px;
+  }
+  .portfolio-cards-wrapper {
+    position: absolute;
+    transform: scale(0);
+  }
+  .portfolio-cards-wrapper.active {
+    transform: scale(1);
+    transition: all 0.5s linear;
+    position: static;
+  }
+  .portfolio-card {
+    width: 50%;
+    text-align: center;
+    float: left;
+	padding:0 20px;
+	margin-bottom: 30px;
+	.img-portfolio-card{
+		margin-bottom: 25px;
+	}
+    h3 {
+      font-weight: 400;
+      font-size: 18px;
+      text-transform: uppercase;
+	  margin-bottom: 25px;
+    }
+  }
+  
+  .btn-more-portfolio {
+    background: #17c2a4;
+    box-shadow: 0px 5px 0px 0px #15a088;
+    &:active{
+      box-shadow: 0px 0px 1px 0px #15a088;
+    }
+  }
+
+// =========ABOUT================
+
+.about {
+    background: #d74680;
+    padding: 130px 0 80px 0;
+    .central-heading {
+      h2:before {
+        background: #b73c6d;
+      }
+    }
+  }
+  
+  .feedback-wrapper {
+    width: 100%;
+  }
+  
+  .feedback-card {
+    width: 50%;
+    color: #e7f1f8;
+    float: left;
+    text-align: left;
+    margin-bottom: 50px;
+    .feedback-text-part{
+      width: 75%;
+      float: left;
+      padding-left: 45px;
+      p {
+      font-size: 21px;
+      line-height: 34px;
+      font-style: italic;
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-top: 25px;
+    }
+    h4 {
+      font-size: 18px;
+      color: #fac996;
+      line-height: 25px;
+    }
+    }
+    
+  }
+  .feedback-avatar {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background: #ccc;
+    float: left;
+  }
+
+// =========FORM================
+
+.form-wrapper {
+    background: #3c5499;
+    padding: 115px 0;
+    .central-heading {
+		margin-bottom: 60px;
+      h2:before {
+        background: #273a71;
+      }
+    }
+  }
+  .form-send {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+  label:nth-child(2){
+    float: right;
+  }
+    label {
+      float: left;
+      position: relative;
+      width: 49%;
+      height: 70px;
+      margin-bottom: 15px;
+      p {
+        font-size: 18px;
+        color: #e7f1f8;
+        position: absolute;
+        top: 50%;
+        left: 25px;
+		transform: translate(0, -50%);
+		opacity: 1;
+		transition: .3s linear;
+        span {
+          color: #ff0000;
+        }
+      }
+    }
+    .comment-wrapper {
+      width: 100%;
+	  height: 200px;
+	  margin-bottom: 60px;
+      p {
+        top: 40px;
+      }
+    }
+    input {
+      width: 100%;
+      height: 100%;
+      font-size: 18px;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #273a71;
+      padding: 20px;
+      border: none;
+      border-radius: 4px;
+      &:focus {
+        outline: none;
+      }
+    }
+    textarea {
+      width: 100%;
+      height: 100%;
+      background: #273a71;
+      padding: 27px 20px;
+      font-size: 18px;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      resize: none;
+      
+      margin-bottom: 60px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .text-field:focus+p{
+	transform: (50%,-50%);
+	opacity: 0;
+  }
+  .send-btn-comment {
+    background: #30bae7;
+    box-shadow: 0px 5px 0px 0px #1598c3;
+    &:active{
+      box-shadow: 0px 0px 1px 0px #1598c3;
+    }
+  }
+  
+
+// =========FOOTER================
+
+footer {
+    padding: 40px 0;
+    background: #344b8e;
+  }
+  .soc-footer-icon-wrapper {
+    width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	li{
+		width: calc(80%/7);
+		display: inline-block;
+		text-align: center;
+		a {
+      font-size: 24px;
+      font-weight: 600;
+      transition: 0.3s linear;
+      &:hover {
+        color: #30bae7;
+      }
+    }
+	}
+  }
+
+
 
 @import "./media.scss";
