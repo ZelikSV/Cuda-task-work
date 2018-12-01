@@ -46,7 +46,7 @@ img {
   }
 header {
     background: #87509c;
-	padding: 30px 0;
+	padding: 57px 0;
 	position: sticky;
 	width: 100%;
 	top: 0;
@@ -62,7 +62,7 @@ header {
   }
   .header-menu{
 	float: right;
-	width: 40%;
+	width: 42%;
   }
   }
   .checkbox-menu-btn{
@@ -73,14 +73,14 @@ header {
   }
   .header-menu-content {
     li {
-      padding: 10px 15px;
+      padding: 0 20px;
+      line-height: 38px;
       border-radius: 4px;
       display: inline-block;
       transition: 0.3s linear;
       a {
         text-transform: uppercase;
         font-size: 16px;
-        line-height: 18px;
       }
       &:hover {
         background: #643a79;
@@ -95,15 +95,20 @@ header {
 // =========BANNER================
 
 .banner-text {
-	padding: 180px 25% 145px 25%;
+	padding-top: 76px;
 	background: #87509c;
     text-align: center;
     p {
       font-size: 42px;
       line-height: 48px;
       color: #fff;
-	  font-weight: 700;
-      margin-bottom: 50px;
+      font-weight: 700;
+      margin: 0 auto;
+      width: 50%;
+      margin-bottom: 55px;
+      &:last-word{
+        letter-spacing: -1px;
+      }
     }
   }
 .btn{
@@ -116,7 +121,9 @@ header {
 	font-size: 18px;
 	font-weight: 400;
 	border: none;
-	box-shadow: 0px 5px 0px 0px #c86a40;
+  	box-shadow: 0px 5px 0px 0px #c86a40;
+  	margin-bottom: 149px;
+  	padding: 0;
   cursor: pointer;
 	&:focus {
 	  outline: none;
@@ -129,7 +136,7 @@ header {
 
 .services {
     background: #17c2a4;
-    padding: 112px 0 33px 0;
+    padding: 112px 0 34px 0;
   }
   .central-heading {
     margin: 0 auto;
@@ -141,13 +148,13 @@ header {
 	  font-weight: 700;
 	  margin-bottom: 38px;
       position: relative;
-      display: block;
+     letter-spacing: 4px;
       &:before {
         content: "";
         position: absolute;
         bottom: -20px;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 35%);
         width: 90px;
         height: 4px;
         background: #14a58c;
@@ -156,20 +163,22 @@ header {
     p {
       font-size: 18px;
 	  line-height: 26px;
-	  padding: 0 15%;
+		margin: 0 auto;
+		width: 56%;
+		word-spacing: 2px;
     }
   }
   
   .card-services-wrapper {
     width: 100%;
-   margin-bottom: 70px;
+   margin-bottom: 95px;
   }
   .card-service {
     width: 25%;
     color: #fff;
     text-align: center;
     float: left;
-    padding: 0 25px;
+    padding: 0 40px;
     .img-service-card{
 	  height: 125px;
 	  margin-bottom: 60px;
@@ -182,7 +191,8 @@ header {
       font-size: 24px;
       font-weight: 700;
       text-transform: uppercase;
-      margin-bottom: 16px;
+	  margin-bottom: 16px;
+	  letter-spacing: 1px;
     }
     p {
       font-size: 16px;
@@ -200,7 +210,10 @@ header {
       color: #3c4761;
       h2:before {
         background: rgba(200, 217, 229, 0.8);
-      }
+	  }
+	  p{
+		  width: 60%;
+	  }
     }
   }
   .team-cards-wrapper {
@@ -210,7 +223,7 @@ header {
     width: 25%;
     text-align: center;
     float: left;
-	padding: 0 20px;
+	padding: 0 25px;
 	
     h3 {
       text-transform: uppercase;
@@ -222,12 +235,13 @@ header {
       font-size: 16px;
       color: #30bae7;
       font-weight: 400;
-      margin-bottom: 28px;
+      margin-bottom: 21px;
     }
     p {
-      font-weight: 300;
+	  font-weight: 300;
+	  line-height: 25px;
       color: #535e75;
-		margin-bottom: 33px;
+		margin-bottom: 23px;
     }
     .avatar-team {
       width: 196px;
@@ -241,7 +255,7 @@ header {
       a {
         background: #bdd1df;
         border-radius: 50%;
-        padding: 10px;
+		padding: 10px;
         transition: 0.3s linear;
         &.fa-facebook {
           padding: 10px 13px;
@@ -257,7 +271,7 @@ header {
 // =========SKILLS================
 
 .skills {
-    padding: 110px 0 50px 0;
+    padding-top: 110px;
     .central-heading {
       color: #3c4761;
       h2:before {
@@ -266,7 +280,7 @@ header {
     }
   }
   .skill-cards-wrapper {
-	margin-bottom: 50px;
+	margin-bottom: 90px;
     width: 100%;
   }
   .skill-card {
@@ -278,8 +292,14 @@ header {
     $border: 13px;
     float: left;
     h3{
-      text-align: center;
-      padding: 30px 0;
+		color: #3c4761;
+		font-family: "Titillium Web";
+		font-size: 27px;
+		font-weight: 700;
+		line-height: 85px;
+		text-transform: uppercase;
+		letter-spacing: 0.48px;
+      	text-align: center;
     }
     .progress {
       margin: 0 auto;
@@ -394,13 +414,6 @@ header {
         background-color: white;
         border-radius: 50%;
         z-index: 2;
-        h2 {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          font-size: 40px;
-        }
       }
     }
   }
@@ -458,13 +471,6 @@ header {
         background-color: white;
         border-radius: 50%;
         z-index: 2;
-        h2 {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          font-size: 40px;
-        }
       }
     }
   }
@@ -522,13 +528,6 @@ header {
         background-color: white;
         border-radius: 50%;
         z-index: 2;
-        h2 {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          font-size: 40px;
-        }
       }
     }
   }
@@ -537,10 +536,11 @@ header {
 
 .portfolio {
     background: #ffdd99;
-    padding: 100px 0;
+    padding-top: 114px;
     text-align: center;
     .central-heading {
-      color: #3c4761;
+	  color: #3c4761;
+	  margin-bottom: 40px;
       h2:before {
         background: #e5c37f;
       }
@@ -553,13 +553,13 @@ header {
 	margin-bottom: 60px;
     li {
       display: inline-block;
-      padding: 10px 25px;
+	  padding: 10px 20px;
+	  margin: 0 5px;
       border-radius: 4px;
       background: #ebc985;
 	  cursor: pointer;
 	  text-transform: uppercase;
       transition: 0.3s linear;
-      margin: 0 5px;
       &.active {
         background: #fff;
       }
@@ -586,10 +586,10 @@ header {
     width: 50%;
     text-align: center;
     float: left;
-	padding:0 20px;
+	padding:0 5px;
 	margin-bottom: 30px;
 	.img-portfolio-card{
-		margin-bottom: 25px;
+		margin-bottom: 30px;
 	}
     h3 {
       font-weight: 400;
@@ -600,6 +600,7 @@ header {
   }
   
   .btn-more-portfolio {
+	  margin-bottom: 113px;
     background: #17c2a4;
     box-shadow: 0px 5px 0px 0px #15a088;
     &:active{
@@ -611,8 +612,9 @@ header {
 
 .about {
     background: #d74680;
-    padding: 130px 0 80px 0;
+    padding-top : 113px;
     .central-heading {
+		margin-bottom: 65px;
       h2:before {
         background: #b73c6d;
       }
@@ -628,26 +630,26 @@ header {
     color: #e7f1f8;
     float: left;
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 140px;
     .feedback-text-part{
-      width: 75%;
+      width: 70%;
       float: left;
       padding-left: 45px;
       p {
       font-size: 21px;
       line-height: 34px;
-      font-style: italic;
+	  font-style: italic;
+	  margin-bottom: 18px;
     }
     h3 {
       font-size: 24px;
       font-weight: 700;
       text-transform: uppercase;
-      padding-top: 25px;
     }
     h4 {
       font-size: 18px;
       color: #fac996;
-      line-height: 25px;
+      line-height: 30px;
     }
     }
     
@@ -664,34 +666,37 @@ header {
 
 .form-wrapper {
     background: #3c5499;
-    padding: 115px 0;
+    padding: 98px 0;
     .central-heading {
-		margin-bottom: 60px;
+		margin-bottom: 74px;
       h2:before {
         background: #273a71;
-      }
+	  }
+	  p{
+		  width: 100%;
+	  }
     }
   }
   .form-send {
-    width: 80%;
+    width: 78%;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   label:nth-child(2){
     float: right;
   }
     label {
       float: left;
       position: relative;
-      width: 49%;
-      height: 70px;
-      margin-bottom: 15px;
+      width: 48%;
+      height: 56px;
+      margin-bottom: 30px;
       p {
         font-size: 18px;
         color: #e7f1f8;
         position: absolute;
         top: 50%;
-        left: 25px;
+        left: 22px;
 		transform: translate(0, -50%);
 		opacity: 1;
 		transition: .3s linear;
@@ -703,9 +708,9 @@ header {
     .comment-wrapper {
       width: 100%;
 	  height: 200px;
-	  margin-bottom: 60px;
+	  margin-bottom: 56px;
       p {
-        top: 40px;
+        top: 28px;
       }
     }
     input {
@@ -747,6 +752,7 @@ header {
 	opacity: 0;
   }
   .send-btn-comment {
+	  margin-bottom: 0;
     background: #30bae7;
     box-shadow: 0px 5px 0px 0px #1598c3;
     &:active{
@@ -762,7 +768,7 @@ footer {
     background: #344b8e;
   }
   .soc-footer-icon-wrapper {
-    width: 80%;
+    width: 100%;
 	margin: 0 auto;
 	text-align: center;
 	li{

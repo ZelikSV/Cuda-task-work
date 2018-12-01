@@ -1,33 +1,32 @@
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 1790px) {
     .container{
         width: 1100px;
     }
-    .banner-text {
-        padding: 100px 15% 145px;
-    }
-    .banner-text p {
-        margin-bottom: 59px;
-    }
-    .feedback-card:nth-child(1),
-    .feedback-card:nth-child(2){
-        margin-bottom: 135px;
-    }
-    .soc-footer-icon-wrapper {
+    
+    .banner-text p{
         width: 100%;
     }
+    
    
  }
 @media only screen and (max-width: 1400px) {
-    .banner-text {
-        padding: 100px 10% 145px;
-    }
+ 
  }
 @media only screen and (max-width: 1200px) {
    .container{
        width: 960px;
    }
    header .header-menu {
-    width: 45%;
+    width: 50%;
+}
+.team-card {
+    padding: 0 5px;
+}
+.feedback-card .feedback-text-part {
+    padding-left: 35px;
+}
+.card-service{
+    padding: 0 20px;
 }
   
 }
@@ -36,7 +35,10 @@
         width: 745px;
     }
     header .header-menu {
-        width: 55%;
+        width: 65%;
+    }
+    .central-heading p{
+        font-size: 17px;
     }
     .btn{
         width: 250px;
@@ -53,15 +55,6 @@
         width: 50%;
         margin-bottom: 50px;
     }
-    .card-service:nth-child(3),
-    .team-card:nth-child(3),
-    .skill-card:nth-child(3){
-        clear: both;
-    }
-    
-    .portfolio-card{
-        width: 50%;
-    }
     .feedback-card .feedback-text-part{
         width: 70%;
         padding-left: 35px;
@@ -75,10 +68,12 @@
             font-size: 16px;
         }
     }
-    .feedback-card:nth-child(1), .feedback-card:nth-child(2){
+    .feedback-card{
         margin-bottom: 65px;
     }
-    
+    .feedback-card .feedback-text-part{
+        padding-left: 5px;
+    }
     .soc-footer-icon-wrapper li a{
         font-size: 20px;
     }
@@ -160,13 +155,9 @@
         padding-left: 0;
     }
     }
-    .banner-text {
-        padding-top: 80px;
-        padding-bottom: 0;
-        .btn{
-            margin-bottom: 60px;
-        }
-    }
+.btn{
+    margin-bottom: 120px;
+}
     .banner-text p {
         font-size: 25px;
     }
@@ -176,7 +167,10 @@
     .skills,
     .about,
     .form-wrapper{
-        padding-top: 65px;
+        padding-top: 75px;
+    }
+    .form-wrapper{
+        padding-bottom: 0px;
     }
     .central-heading h2 {
         font-size: 30px;
@@ -185,6 +179,19 @@
         font-size: 16px;
         line-height: 24px;
         padding: 0;
+        width: 100%;
+    }
+    .card-service:nth-child(3){
+        clear: both;
+    }
+    .card-services-wrapper {
+        margin-bottom: 35px;
+    }
+    .team-card p {
+        font-size: 15px;
+    }
+    .team{
+        padding-bottom: 30px;
     }
     .portfolio-card {
         width: 70%;
@@ -192,13 +199,21 @@
         margin: 0 auto;
         margin-bottom: 50px;
     }
+    .feedback-card .feedback-text-part{
+        padding-left: 50px;
+    }
     .feedback-card{
         width: 100%;
         padding: 0;
+        margin-bottom: 60px;
     }
     .form-send label {
         width: 100%;
     }
+    .send-btn-comment{
+        margin-bottom: 60px;
+    }
+
     .soc-footer-icon-wrapper li {
         width: calc(100%/5);
         
@@ -206,29 +221,40 @@
     .soc-footer-icon-wrapper li:nth-child(1),
     .soc-footer-icon-wrapper li:nth-child(2),
     .soc-footer-icon-wrapper li:nth-child(3),
-    .soc-footer-icon-wrapper li:nth-child(4),{
+    .soc-footer-icon-wrapper li:nth-child(4){
         margin-bottom: 20px;
     }
 }
 @media only screen and (max-width: 576px) {
+    header .logo svg {
+        height: auto;
+        width: 75%;
+    }
     .btn {
         width: 200px;
         font-size: 13px;
         line-height: 40px;
     }
+    .team .central-heading p {
+        width: 100%;
+    }
     .team-card{
+        width: 70%;
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 50px;
         .avatar-team{
             width: 90px;
             height: 90px;
         }
         h3{
-            font-size: 18px;
+            font-size: 20px;
         }
         h4{
-            font-size: 15px;
+            font-size: 18px;
         }
         p{
-            font-size: 14px;
+            font-size: 16px;
         }
         .soc-icons{
             a{
@@ -254,6 +280,9 @@
     .skill-cards-wrapper{
         margin-bottom: 0px;
     }
+    .skill-card h3{
+        font-size: 24px;
+    }
     .card-service{
         padding: 0 10px;
         .img-service-card{
@@ -268,6 +297,7 @@
     }
     .central-heading h2 {
         font-size: 25px;
+        letter-spacing: 3px;
     }
     .central-heading p {
         font-size: 16px;
@@ -311,10 +341,25 @@
         margin: 0 auto;
         margin-bottom: 30px;
     }
+    .central-heading h2{
+        font-size: 23px;
+        letter-spacing: 1px;
+    }
+    .central-heading p{
+        font-size: 15px;
+    }
+    .skill-card h3 {
+        font-size: 20px;
+    }
+    .portfolio{
+        .btn {
+            margin-bottom: 40px;
+        }
+    }
     .tabs-nav{
         width: 100%;
         li{
-            padding: 8px 18px;
+            padding: 8px 15px;
         }
     }
     .team-card p {
@@ -324,7 +369,20 @@
 }
 
 @media only screen and (max-width: 415px) {
-   
+    .banner-text{
+        .btn {
+            margin-bottom: 75px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    .central-heading p {
+        font-size: 13px;
+    }
+    .header-menu-content li a{
+        font-size: 13px;
+    }
     .card-service, .skill-card, .team-card{
         width: 90%;
     }
@@ -339,6 +397,9 @@
     .feedback-card{
         text-align: center;
     }
+    .send-btn-comment {
+        margin-bottom: 10px;
+    }
     .soc-footer-icon-wrapper li{
         width: calc(100%/3);
     }
@@ -348,8 +409,15 @@
 }
 
 @media only screen and (max-width: 375px) {
+    .banner-text p {        
+        padding: 0 5px;
+    }
     .portfolio-card h3 {
         font-size: 14px;
+    }
+    .central-heading {
+        margin: 0 auto 50px;
+        color: #fff;
     }
     .img-portfolio-card {
         width: 90%;
@@ -361,6 +429,7 @@
     .tabs-nav li {
         font-size: 13px;
         padding: 8px 13px;
+        margin: 0;
     }
     .form-send label p{
         font-size: 16px;
