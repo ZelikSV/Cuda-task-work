@@ -73,20 +73,25 @@ header {
   }
   .header-menu-content {
     li {
-      padding: 0 20px;
       line-height: 38px;
-      border-radius: 4px;
       display: inline-block;
       transition: 0.3s linear;
       a {
         text-transform: uppercase;
         font-size: 16px;
+        padding: 0 20px;
+        border-radius: 4px;
+        transition: 0.3s linear;
+        &:hover {
+          background: #643a79;
       }
-      &:hover {
-        background: #643a79;
-	  }
+      }
+      
 	  &.active{
-		background: #643a79;
+      a{
+        background: #643a79;
+      }
+		
 	  }
 	}
 	
@@ -133,10 +138,11 @@ header {
 	}
 }
 // =========SERVICES================
-
+.section-wrapper{
+  padding: 112px 0;
+}
 .services {
     background: #17c2a4;
-    padding: 112px 0 34px 0;
   }
   .central-heading {
     margin: 0 auto;
@@ -171,7 +177,6 @@ header {
   
   .card-services-wrapper {
     width: 100%;
-   margin-bottom: 95px;
   }
   .card-service {
     width: 25%;
@@ -205,7 +210,6 @@ header {
 
 .team {
 	background: #e7f1f8;
-	padding: 114px 0 123px 0;
     .central-heading {
       color: #3c4761;
       h2:before {
@@ -271,7 +275,6 @@ header {
 // =========SKILLS================
 
 .skills {
-    padding-top: 110px;
     .central-heading {
       color: #3c4761;
       h2:before {
@@ -280,7 +283,6 @@ header {
     }
   }
   .skill-cards-wrapper {
-	margin-bottom: 90px;
     width: 100%;
   }
   .skill-card {
@@ -536,7 +538,6 @@ header {
 
 .portfolio {
     background: #ffdd99;
-    padding-top: 114px;
     text-align: center;
     .central-heading {
 	  color: #3c4761;
@@ -600,7 +601,7 @@ header {
   }
   
   .btn-more-portfolio {
-	  margin-bottom: 113px;
+	  margin-bottom: 0;
     background: #17c2a4;
     box-shadow: 0px 5px 0px 0px #15a088;
     &:active{
@@ -612,7 +613,7 @@ header {
 
 .about {
     background: #d74680;
-    padding-top : 113px;
+    padding-bottom: 0;
     .central-heading {
 		margin-bottom: 65px;
       h2:before {
@@ -666,7 +667,6 @@ header {
 
 .form-wrapper {
     background: #3c5499;
-    padding: 98px 0;
     .central-heading {
 		margin-bottom: 74px;
       h2:before {
@@ -681,7 +681,6 @@ header {
     width: 78%;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 20px;
   label:nth-child(2){
     float: right;
   }
